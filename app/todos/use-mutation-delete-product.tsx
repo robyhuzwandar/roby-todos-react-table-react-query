@@ -1,0 +1,18 @@
+import { useMutation } from "@tanstack/react-query";
+
+const deleteProducts = async (id: number): Promise<unknown> => {
+  const response = await fetch(`https://dummyjson.com/products/${id}`, {
+    method: "DELETE",
+  });
+
+  const data = await response.json();
+  console.log("DELETED : ", JSON.stringify(data, null, 2));
+  return data;
+};
+
+const useMutationDeleteProduct = () =>
+  useMutation({
+    mutationFn: deleteProducts,
+  });
+
+export default useMutationDeleteProduct;

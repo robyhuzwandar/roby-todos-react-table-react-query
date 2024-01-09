@@ -6,7 +6,6 @@ const deleteProducts = async (id: number): Promise<unknown> => {
   });
 
   const data = await response.json();
-  console.log("DELETED : ", JSON.stringify(data, null, 2));
   return data;
 };
 

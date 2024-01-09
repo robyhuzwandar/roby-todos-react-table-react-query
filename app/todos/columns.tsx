@@ -1,31 +1,9 @@
-"use client";
-
 import { ColumnDef } from "@tanstack/react-table";
 
-import { MoreHorizontal, ArrowUpDown } from "lucide-react";
+import { ArrowUpDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Product } from "./product-types";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import DeleteProductDialog from "./action-cell";
-import DeleteConfirmation from "@/components/delete-confirmation";
-import useDeleteProduct from "./action-cell";
 import ActionCell from "./action-cell";
 
 export const columns: ColumnDef<Product>[] = [

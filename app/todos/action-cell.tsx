@@ -1,5 +1,3 @@
-"use client";
-
 import DeleteConfirmation from "@/components/delete-confirmation";
 import useMutationDeleteProduct from "./use-mutation-delete-product";
 import { useQueryClient } from "@tanstack/react-query";
